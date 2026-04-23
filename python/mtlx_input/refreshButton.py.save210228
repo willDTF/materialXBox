@@ -1,0 +1,9 @@
+            if shader_name is "ramp_rgb":
+                import GafferOSL
+                node = GafferOSL.OSLShader(shader_name)
+                node.loadShader( "Pattern/ColorSpline" )
+
+            elif shader_name is "ramp_float":
+                import GafferOSL
+                node = GafferOSL.OSLShader(shader_name)
+                node.loadShader( "Pattern/FloatSpline" )
